@@ -28,7 +28,7 @@ Confirm Battle
 Simulate Battle
     ↓
 Display Results
-```cpp
+```
 
 The attacker can roll up to three dice, while the defender can roll up to two. The dice are compared from highest to lowest, with the losing side losing troops. Battles continue until either the attacker or defender reaches zero troops.
 
@@ -60,10 +60,12 @@ The project is written in Arduino C++ and uses:
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <ezButton.h>
+```
 
 The LCD uses I2C address 0x27:
 ```cpp
 LiquidCrystal_I2C lcd(0x27, 16, 2);
+```
 
 ## Credits & Attribution
 This project was based on and adapted from the CrunchLabs Hack Pack Label Maker source code.
