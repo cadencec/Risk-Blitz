@@ -28,6 +28,7 @@ Confirm Battle
 Simulate Battle
     ↓
 Display Results
+```cpp
 
 The attacker can roll up to three dice, while the defender can roll up to two. The dice are compared from highest to lowest, with the losing side losing troops. Battles continue until either the attacker or defender reaches zero troops.
 
