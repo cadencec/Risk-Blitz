@@ -1,6 +1,6 @@
 # Risk Blitz 🎲
 
-![Risk Blitz](images/risk-blitz.jpg)
+![Risk Blitz](images/risk-blitz.png)
 
 Risk Blitz is an Arduino-based battle simulator inspired by the board game **Risk**. It uses a joystick and 16x2 I2C LCD to let players enter the number of attacking and defending troops, simulate dice rolls, and display the battle results.
 
