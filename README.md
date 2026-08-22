@@ -18,7 +18,7 @@ Risk Blitz is an Arduino-based battle simulator inspired by the board game **Ris
 ## How It Works
 
 The device uses a simple state machine:
-
+```text
 Main Menu
     ↓
 Edit Attackers
@@ -38,32 +38,33 @@ The attacker can roll up to three dice, while the defender can roll up to two. T
 ![edit](./images/2.png)
 ![confirm](./images/3.png)
 ![results](./images/4.png)
-
 ## Hardware
-Arduino-compatible microcontroller
-16x2 I2C LCD
-Analog joystick with push button
-Breadboard and jumper wires
-Pin Configuration
-Component	Arduino Pin
-Joystick X	A2
-Joystick Y	A1
-Joystick Button	D14
-LCD SDA	SDA
-LCD SCL	SCL
+
+- Arduino-compatible microcontroller
+- 16x2 I2C LCD
+- Analog joystick with push button
+- Breadboard and jumper wires
+
+## Pin Configuration
+
+| Component | Arduino Pin |
+|---|---|
+| Joystick X | A2 |
+| Joystick Y | A1 |
+| Joystick Button | D14 |
+| LCD SDA | SDA |
+| LCD SCL | SCL |
 
 ## Software
 The project is written in Arduino C++ and uses:
-
+```cpp
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 #include <ezButton.h>
 
 The LCD uses I2C address 0x27:
-
+```cpp
 LiquidCrystal_I2C lcd(0x27, 16, 2);
-
-If your LCD has a different address, this may need to be changed.
 
 ## Credits & Attribution
 This project was based on and adapted from the CrunchLabs Hack Pack Label Maker source code.
@@ -75,17 +76,7 @@ https://github.com/HackPackOfficial/HackPack-Code
 Risk Blitz modifies the original project by replacing the label-making functionality with a Risk battle simulator, including troop selection, dice mechanics, battle resolution, and a new LCD interface.
 
 ## Disclaimer
-Risk Blitz is an independent fan-made project and is not affiliated with or endorsed by Hasbro, Risk, CrunchLabs, or Mark Rober.
-
 "Risk" is a trademark of its respective owner.
-
-## Future Improvements
-🎲 Animated dice rolls
-🔊 Sound effects
-🏆 Battle statistics
-🎨 Custom LCD graphics
-⚔️ More Risk mechanics
-🔄 Replay/reset functionality
 
 ## License
 The original CrunchLabs source code used in this project is licensed under the MIT License.
